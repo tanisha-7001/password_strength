@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8;" name="viewpoint;" content="width=device-width, initial-scale=1.0;">
-    <title>Mini Project</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Mini Project</title>
+   <link rel="stylesheet"  href="styles.css">
 </head>
-<body style="background-color:rgba(0, 255, 251, 0.201); ">
-  <h1>Password    Strength    Estimator</h1>
-  <div class="password-container">
-    <input style="width:20%; size: 50%;" type="password" id="password-input" placeholder="Enter your password" onkeyup="checkPasswordStrength()"><br><br>
-    <input type="checkbox" id="visibility-checkbox" onchange="togglePasswordVisibility()"> Show Password
-  
-    <p style="font-size:40px;" id="strength-result"></p>
-  </div>
-  
-  <script src="script.js"></script>
-  <br>
-  <pre>
-  <p style="text-align:center; font-size: 150%;">Password should contain more than 8 characters including [a-z][0-9][@,#,etc]
 
-  Password should contain an Upper-case letter as well as Lower-case letter
-
-  Password should contain atlaest one special character
-
-  Password should contain number between [0-9]</p>
-</pre>
+<body style="background-image:url('im.jpg'); background-size: cover;">
+  <h1>Password &nbsp;Strength &nbsp;Estimator</h1>
+    <div class="p">
+      <label for="user">User ID: &nbsp;</label>
+        <input placeholder="Enter username" type="text" id="user" ><br>
+          <label for="password">Password:</label>
+            <input type="password" id="password"  placeholder="Enter your password" onkeyup="PasswordStrength()"><br><br>
+              <input type="checkbox" onclick="toggle()"> Show Password 
+                <p style="font-size:250%;" id="strength"><br></p>
+    </div>
+    <script src="script.js"></script>
+    <p id="set1" style="text-align:center; font-size: 150%;">Length should be >=12</p>
+    <p id="set2" style="text-align:center; font-size: 150%;">Password should contain lower case letter</p>
+    <p id="set3" style="text-align:center; font-size: 150%;">Password should contain upper case letter</p>
+    <p id="set4" style="text-align:center; font-size: 150%;">Password should contain digis</p>
+    <p id="set5" style="text-align:center; font-size: 150%;">Password should contain special characters</p>
+ 
 </body>
 </html>
